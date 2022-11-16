@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.div1 {
+    width: 1370px;
+    height: 700px;
+    border: 2px solid red;
+    background-image: url(../02-BackgroundImageSingleWebPage/images/big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text1 {
+    color: white;
+    position: absolute;
+    top: 55%;
+    width: 1370px;
+    height: 26px;
+    text-align: center;
+}
+
+.div2 {
+    width: 1370px;
+    height: 700px;
+    border: 2px solid red;
+    background-image: url(../02-BackgroundImageSingleWebPage/images/big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+.div2 .text2{
+    color: white;
+    position: absolute;
+    top: 160%;
+    width: 1370px;
+    height: 26px;
+    text-align: center;
+}
+
+.div3 {
+    width: 1370px;
+    height: 700px;
+    border: 2px solid red;
+    background-image: url(../02-BackgroundImageSingleWebPage/images/folder-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1370px 850px;
+    background-attachment: fixed;
+}
+
+.div3 .text3 {
+    color: white;
+    position: absolute;
+    top: 270%;
+    width: 1370px;
+    height: 26px;
+    text-align: center;
+}
+
+.div4 {
+    width: 1370px;
+    height: 700px;
+    border: 2px solid red;
+    background-image: linear-gradient(to bottom right, #fcea45, #fcc245, #fc466b, #9e0d9e, #722192);
+    background-attachment: fixed;
+}
+
+
