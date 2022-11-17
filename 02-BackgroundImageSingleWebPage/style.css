@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -68,5 +67,4 @@
     background-image: linear-gradient(to bottom right, #fcea45, #fcc245, #fc466b, #9e0d9e, #722192);
     background-attachment: fixed;
 }
-
 
