@@ -107,5 +107,19 @@
             © 2022 John Doe. All Rights Reserved
         </div>
     </footer>
+    <script>
+        // let header = document.querySelector('header');
+        // window.addEventListener('scroll', function() {
+        //     if (window.scrollY > 70){
+        //         header.classList.add("sticky")
+        //     } else {
+        //         header.classList.remove("sticky")
+        //     }
+        // })
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+        header.classList.toggle('sticky', window.scrollY > 500)
+        })
+    </script>
 </body>
 </html>
