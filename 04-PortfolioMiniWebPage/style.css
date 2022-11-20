@@ -36,7 +36,7 @@ header ul {
     align-items: flex-end;
     list-style: none;
    }
- header nav a a:hover {
+ header nav a:hover {
     color: #E9B949;
  }
  .text {
