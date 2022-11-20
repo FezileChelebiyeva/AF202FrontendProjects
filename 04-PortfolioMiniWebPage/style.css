@@ -12,23 +12,23 @@ header {
     left: 0;
     z-index: 2;
     background-color: #FFFAEB;
-    /* box-shadow: 1px -7px 10px; */
 }
 nav {
     display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .logo {
     font-size: 30px;
     font-weight: 500;
     margin-top: 15px;
-    margin-left: 150px;
+    margin-left: 100px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.747);
     letter-spacing: 10px;
 }
  ul {
     display: flex;
     align-items: flex-end;
-    margin-left: 350px;
     list-style: none;
    }
  a:hover {
@@ -181,11 +181,11 @@ nav {
 }
 .section3 {
    width: 100vw;
-   height: 75vh;
+   height: 100vh;
    background-color: #F1F5F8; 
 }
 .services {
-   padding-top: 85px;
+   padding-top: 90px;
    font-size: 35px;
    letter-spacing: 4px;
    text-align: center;
@@ -248,6 +248,7 @@ nav {
    background-color: #EAB949;
    color: white;
    transition: 1s;
+   height: 278px;
 }
 .card1:hover p{
    color: white;
@@ -256,6 +257,41 @@ nav {
 .card1:hover .line4{
    background-color: white;
    transition: 1s;
+} .section4 {
+   width: 100vw;
+   height: 75vh;
+   background-color: #FFFAEB;
+}
+.word {
+   text-align: center;
+   padding-top: 30vh;
+   font-weight: 700;
+   font-size: 60px;
+   letter-spacing: 5px;
+   color: #0F2843;
+}
+.line5 {
+   width: 70px;
+   height: 3px;
+   background-color: #E9B949;
+   margin: auto;
+   margin-top: 6px;
+}
+.last-text {
+   text-align: center;
+   color: #436887;
+   padding-top: 25px;
+   font-size: 15px;
+}
+.text-p {
+    margin-left: 30%;
+    margin-top: 55px;
+    color: #496d8a;
+    line-height: 40px;
+    font-size: 15px;
+}
+.text0 {
+    color: #E9B949;
 }
 footer {
    width: 100vw;
