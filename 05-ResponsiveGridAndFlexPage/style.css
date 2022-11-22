@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+/* desktop large size */
+/* umumi  */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+/* solteref */
+.leftBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; 
+}
+.leftBoxHeader {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    column-gap: 10px;
+}
+.leftBoxHeaderLeft-Right {
+    width: 50%;
+    height: 50vh;
+    background-color: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing {
+    width: 100%;
+    height: 25vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.leftBoxFooters {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.left {
+    display: flex;
+    width: 50%;
+    column-gap: 10px;
+}
+.right {
+    display: flex;
+    width: 50%;
+    column-gap: 10px;
+}
+.footer1 {
+    background-color: blue;
+    width: 50%;
+    height: 25vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* sag teref */
+.rightBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.rightBoxHeader {
+    width: 100%;
+    height: 25vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+}
+.rightmiddleBox {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.left1 {
+    display: flex;
+    width: 50%;
+    column-gap: 10px;
+}
+.right1 {
+    display: flex;
+    width: 50%;
+    column-gap: 10px;
+}
+.middleBox {
+    width: 50%;
+    height: 25vh;
+    background-color: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footerRight {
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+/* desctop size */
+@media only screen and (max-width: 1200px) {
+    .middleBox, .pricing, .leftBoxHeaderLeft-Right, .rightBoxHeader, .footer1, .footerRight {
+        background-color: red;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        gap: 10px;
+        display: block;
+    }
+    .leftBox {
+        width: 100%;
+        row-gap: 10px;
+    }
+    .rightBox {
+        width: 100%;
+        height: 100vh;
+        margin-top: 10px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 991px) {
+    .middleBox, .pricing, .leftBoxHeaderLeft-Right, .rightBoxHeader, .footer1, .footerRight {
+        background-color: green;
+    }
+    .leftBoxFooters {
+        display: block;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .rightmiddleBox {
+        display: block;
+    }
+    .left1 {
+        width: 100%;
+    }
+    .right1 {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .middleBox, .pricing, .leftBoxHeaderLeft-Right, .rightBoxHeader, .footer1, .footerRight {
+        background-color: yellow;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        gap: 10px;
+        display: block;
+    }
+    .leftBox {
+        width: 100%;
+        row-gap: 10px;
+    }
+    .rightBox {
+        width: 100%;
+        height: 100vh;
+        margin-top: 10px;
+    }
+    .leftBoxFooters, .rightmiddleBox, .leftBoxHeader {
+        display: block;
+    }
+    .rightmiddleBox{
+        width: 100%;
+       height: 40vh;
+    }
+    .leftBoxHeaderLeft-Right {
+        margin-top: 20px;
+        
+    }
+    .leftBoxHeader {
+    width: 100%;
+    height: 28vh;
+    }
+    .sj {
+       width: 100%;
+       height: 10vh;
+       margin-top: 10px;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+    .leftBoxHeaderLeft-Right, .pricing, .footerRight, .rightBoxHeader {
+        width: 100%;
+        height: 10vh;
+    }
+    .left {
+        display: block;
+    }
+    .right {
+        display: block;
+    }
+    .left1 {
+        display: block;
+    }
+    .right1 {
+        display: block;
+    }
+}
