@@ -1,2 +1,0 @@
-# AF202FrontendProjects
-homework

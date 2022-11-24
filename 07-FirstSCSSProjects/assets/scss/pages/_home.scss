@@ -1,0 +1,140 @@
+#section1 {
+  .container {
+    .box {
+      @include flexBox();
+      width: 100%;
+      .card {
+        text-align: center;
+        width: 25%;
+        height: 200px;
+        background-color: #f1f5f9;
+        transition: 0.2s;
+        .fa-solid {
+          font-size: 30px;
+          color: $primary-color;
+          padding-top: 25px;
+        }
+        h3 {
+          color: $secondary-color;
+          letter-spacing: 3px;
+        }
+        p {
+          color: $lorem-color;
+        }
+        &:hover {
+          transform: scale(1.05);
+          background-color: white;
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+    .tea-station {
+      @include flexBox();
+      column-gap: 90px;
+      width: 100%;
+      padding: 0 40px;
+      padding-top: 80px;
+      .img-tea {
+        height: 350px;
+        width: 50%;
+        border: 8px solid $primary-color;
+        background-image: url("../images/about.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:hover {
+          background-size: 110%;
+          background-image: linear-gradient(
+              to bottom,
+              #678e3f80,
+              rgba(88, 139, 88, 0.486)
+            ),
+            url("../images/about.jpeg");
+        }
+      }
+      .about-our {
+        width: 50%;
+        .about-head {
+          font-family: $font-second;
+          color: $primary-color;
+          font-size: 30px;
+          letter-spacing: 3px;
+          font-weight: 900;
+        }
+        h2 {
+          color: $secondary-color;
+        }
+        p {
+          width: 450px;
+          color: $lorem-color;
+        }
+        button {
+          @extend %button;
+          &:hover {
+            background-color: $hover-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#section2 {
+  .container {
+    .section {
+      padding: 60px 60px;
+      margin: 95px 0;
+      @include flexBox();
+      column-gap: 25px;
+      background-color: $bg-color;
+      .text {
+        width: 300px;
+        .header {
+          color: $primary-color;
+          font-family: "Grand Hotel", cursive;
+          letter-spacing: 3px;
+        }
+        .header1 {
+          color: $secondary-color;
+          letter-spacing: 3px;
+        }
+        .lorem {
+          width: 100%;
+          color: $lorem-color;
+          margin-top: 20px;
+          font-size: 13.7px;
+        }
+        .btn {
+          @extend %button;
+          cursor: pointer;
+          &:hover {
+            background-color: $hover-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    .card {
+      img {
+        width: 250px;
+        height: 230px;
+        border-radius: 7px;
+        size: 90%;
+      }
+      .imgfooter {
+        color: $secondary-color;
+        letter-spacing: 3px;
+        font-size: 14px;
+        font-weight: 800;
+        margin-top: 20px;
+      }
+      .value {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

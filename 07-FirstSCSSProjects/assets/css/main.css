@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#section2 .container .section .text .btn, #section1 .container .tea-station .about-our button {
+  width: 140px;
+  height: 30px;
+  background-color: #678E3F;
+  border: 0;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#section1 .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#section1 .container .box .card {
+  text-align: center;
+  width: 25%;
+  height: 200px;
+  background-color: #f1f5f9;
+  transition: 0.2s;
+}
+#section1 .container .box .card .fa-solid {
+  font-size: 30px;
+  color: #678E3F;
+  padding-top: 25px;
+}
+#section1 .container .box .card h3 {
+  color: #0a1624;
+  letter-spacing: 3px;
+}
+#section1 .container .box .card p {
+  color: #98a6b2;
+}
+#section1 .container .box .card:hover {
+  transform: scale(1.05);
+  background-color: white;
+  border-bottom: 2px solid #678E3F;
+}
+#section1 .container .tea-station {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 90px;
+  width: 100%;
+  padding: 0 40px;
+  padding-top: 80px;
+}
+#section1 .container .tea-station .img-tea {
+  height: 350px;
+  width: 50%;
+  border: 8px solid #678E3F;
+  background-image: url("../images/about.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section1 .container .tea-station .img-tea:hover {
+  background-size: 110%;
+  background-image: linear-gradient(to bottom, rgba(103, 142, 63, 0.5019607843), rgba(88, 139, 88, 0.486)), url("../images/about.jpeg");
+}
+#section1 .container .tea-station .about-our {
+  width: 50%;
+}
+#section1 .container .tea-station .about-our .about-head {
+  font-family: "Grand Hotel", cursive;
+  color: #678E3F;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+#section1 .container .tea-station .about-our h2 {
+  color: #0a1624;
+}
+#section1 .container .tea-station .about-our p {
+  width: 450px;
+  color: #98a6b2;
+}
+#section1 .container .tea-station .about-our button:hover {
+  background-color: #C0EB8B;
+  color: #678E3F;
+}
+
+#section2 .container .section {
+  padding: 60px 60px;
+  margin: 95px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  background-color: #F1F5F9;
+}
+#section2 .container .section .text {
+  width: 300px;
+}
+#section2 .container .section .text .header {
+  color: #678E3F;
+  font-family: "Grand Hotel", cursive;
+  letter-spacing: 3px;
+}
+#section2 .container .section .text .header1 {
+  color: #0a1624;
+  letter-spacing: 3px;
+}
+#section2 .container .section .text .lorem {
+  width: 100%;
+  color: #98a6b2;
+  margin-top: 20px;
+  font-size: 13.7px;
+}
+#section2 .container .section .text .btn {
+  cursor: pointer;
+}
+#section2 .container .section .text .btn:hover {
+  background-color: #C0EB8B;
+  color: #678E3F;
+}
+#section2 .container .card img {
+  width: 250px;
+  height: 230px;
+  border-radius: 7px;
+  size: 90%;
+}
+#section2 .container .card .imgfooter {
+  color: #0a1624;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+#section2 .container .card .value {
+  color: #678E3F;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}/*# sourceMappingURL=main.css.map */
