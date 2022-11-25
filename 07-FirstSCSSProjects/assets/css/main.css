@@ -55,7 +55,7 @@ body {
 
 #footer .container .footer {
   width: 100%;
-  height: 30vh;
+  padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.897);
   color: white;
 }
@@ -67,7 +67,6 @@ body {
 }
 #footer .container .footer .div-icon .footer-icon {
   padding: 10px;
-  margin-top: 50px;
   transition: all 1s;
   cursor: pointer;
 }
