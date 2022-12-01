@@ -4,8 +4,8 @@
 }
 
 .div1 {
-    width: 1370px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
     border: 2px solid red;
     background-image: url(../02-BackgroundImageSingleWebPage/images/big.jpeg);
     background-repeat: no-repeat;
@@ -16,19 +16,20 @@
     color: white;
     position: absolute;
     top: 55%;
-    width: 1370px;
-    height: 26px;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
 }
 
 .div2 {
-    width: 1370px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
     border: 2px solid red;
-    background-image: url(../02-BackgroundImageSingleWebPage/images/big.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    background-image:
+    linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('../02-BackgroundImageSingleWebPage/images/big.jpeg');
     background-attachment: fixed;
 }
 
@@ -36,18 +37,18 @@
     color: white;
     position: absolute;
     top: 160%;
-    width: 1370px;
-    height: 26px;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
 }
 
 .div3 {
-    width: 1370px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
     border: 2px solid red;
     background-image: url(../02-BackgroundImageSingleWebPage/images/folder-img.jpeg);
     background-repeat: no-repeat;
-    background-size: 1370px 850px;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
 }
 
@@ -55,14 +56,14 @@
     color: white;
     position: absolute;
     top: 270%;
-    width: 1370px;
-    height: 26px;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
 }
 
 .div4 {
-    width: 1370px;
-    height: 700px;
+    width: 100vw;
+    height: 100vh;
     border: 2px solid red;
     background-image: linear-gradient(to bottom right, #fcea45, #fcc245, #fc466b, #9e0d9e, #722192);
     background-attachment: fixed;
