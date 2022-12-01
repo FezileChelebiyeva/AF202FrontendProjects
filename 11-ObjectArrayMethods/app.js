@@ -107,29 +107,7 @@ const users = [
   },
 ];
 
-// function devolopers(array) {
-//   // console.log(array);
-//   for (i = 0; i < array.length; i++) {
-//     // console.log(array[i].skills[1]);
-//     let frontSkill = ["HTML", "CSS", "JavaScript"];
-//     let backSkill = ["C#", "Java", "SQL", "Express"];
-//     let fullStack = ["Node"];
-//     for (let j = 0; j < array[i].skills?.length; j++) {
-//       if (array[i].skills[j] == frontSkill[i]) {
-//         console.log(`FrontEnd Developer:  ${array[i].name}`);
-//       } else if (array[i].skills[j] == backSkill[i]) {
-//         console.log(`BackEnd Developer:  ${array[i].name}`);
-//       } else if (array[i].skills[j] == fullStack[i]) {
-//         console.log(`FullStack  Developer:  ${array[i].name}`);
-//       }
-//     }
-//   }
-// }
-// devolopers(users);
 
-// front = Alex, Daniel, Thomas,           // html css js react redux
-// back = Raul, Logan,                     // c# java sql
-// full = Asab, Brook, John, Paul          // html java sql css js react redux mongodb node node.js python
 
 function frontEndDevolopers(array) {
   for (let i = 0; i < array.length; i++) {
@@ -180,7 +158,7 @@ function fullStackDevolopers(array) {
             "SQL",
           ];
     let backEnd = ["C#", "Java", "SQL", "Python"];
-    let frontEnd = ["HTML", "Redux", "React", "JavaScript", "CSS"];
+    // let frontEnd = ["HTML", "Redux", "React", "JavaScript", "CSS"];
 
       for (let j = 0; j < array[i].skills?.length; j++) {
         if (array[i].skills[j] == full[i] || array[i].skills[j] == backEnd[i]) {
