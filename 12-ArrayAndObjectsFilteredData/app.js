@@ -162,9 +162,26 @@ function largeKey(array) {
   });
 }
 largeKey(arr);
+
 // 9.  terkibinde 2 kiçik 'L' herfi olan obyekt(ler)in index(ler)ini tapin.
+function keyOfIndex(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].name.includes("l", 2)) {
+      console.log(i);
+    }
+  }
+}
+keyOfIndex(arr);
 
-
+// 10. terkibinde 2 't' herfi olan obyekt(ler)in key(ler)ini tapin.
+function keyOfObject(array) {
+  array.forEach((a) => {
+    if (a.name.includes("t", 2)) {
+      console.log(a.key);
+    }
+  });
+}
+keyOfObject(arr);
 
 // 11. key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
 function keyAndName(array) {
