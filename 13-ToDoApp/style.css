@@ -15,7 +15,7 @@ body {
   width: 50%;
   margin: auto;
   margin-top: 80px;
-  padding: 30px;
+  padding: 60px;
   background-color: rgb(123, 168, 219);
   border-radius: 10px;
 }
@@ -97,6 +97,7 @@ h1 {
   border: 1px solid rgba(131, 127, 127, 0.452);
   background-color: rgb(123, 168, 219);
   border-radius: 10px;
+  display: none;
 }
 .todo {
   width: 100%;
@@ -104,9 +105,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 .text {
+  width: 100%;
   font-weight: 800;
   font-size: 15px;
   letter-spacing: 1px;

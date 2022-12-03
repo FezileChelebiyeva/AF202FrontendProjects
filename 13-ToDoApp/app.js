@@ -9,6 +9,7 @@ addBtn.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (inputEl.value !== "") {
+    box.style.display = "block"
     box.style.color = "black";
     box.style.fontSize = "14px";
     box.style.padding = "0 30px";
@@ -67,8 +68,9 @@ deleteBtn.addEventListener("click", function () {
   }, 2000);
   setTimeout(() => {
     box.innerText = "your to do deleted";
-    box.style.color = "red";
+    box.style.color = "rgb(139, 2, 2)";
     box.style.fontSize = "18px";
+    box.style.fontWeight = "800";
   }, 1000);
   inputEl.value = "";
 });
