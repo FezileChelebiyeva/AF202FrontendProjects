@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+body .container #contact #contact-form button, body .container #subscribe-modal .content #subscribe-form button, body .container #content div button, body .container .nav .form-section #rental-form button {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
+}
+body .container #contact #contact-form button:hover, body .container #subscribe-modal .content #subscribe-form button:hover, body .container #content div button:hover, body .container .nav .form-section #rental-form button:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+body .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-right: 1px solid #ccc;
+}
+body .container #header {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  body .container #header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 1;
+  }
+  body .container #header h1 {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
+  body .container #header .menu .fa-bars {
+    font-size: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+}
+
+body .black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+body .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-right: 1px solid #ccc;
+}
+body .container .nav {
+  display: block;
+  width: 260px;
+  position: fixed;
+  z-index: 3;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  height: 100vh;
+  overflow-y: scroll;
+}
+body .container .nav .form-section {
+  padding: 20px;
+}
+body .container .nav .form-section .close-icon .fa-remove {
+  display: none;
+  margin-left: 200px;
+  cursor: pointer;
+}
+body .container .nav .form-section h3 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+body .container .nav .form-section p {
+  margin: 16px 0;
+}
+body .container .nav .form-section #rental-form {
+  margin-top: 60px;
+}
+body .container .nav .form-section #rental-form .input-control input {
+  width: 100%;
+  padding: 9px;
+  outline: 0;
+  border: 0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+body .container .nav .form-section #rental-form button {
+  width: 100%;
+}
+body .container .nav .navbar ul li {
+  padding: 20px 0;
+}
+body .container .nav .navbar ul li:hover {
+  background: #cccccc;
+}
+body .container .nav .navbar ul li a {
+  color: black;
+  padding: 20px;
+}
+body .container #apartment {
+  padding: 10px;
+  margin-left: 260px;
+}
+body .container #apartment .slider h2 {
+  color: #4caf50;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 16px 0 16px 8px;
+}
+body .container #apartment .slider .main-img-container {
+  position: relative;
+  margin: 0 8px;
+}
+body .container #apartment .slider .main-img-container #main-img {
+  width: 100%;
+}
+body .container #apartment .slider .main-img-container #img-info {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  padding: 16px;
+  color: #fff;
+  background: #000;
+  font-size: 15px;
+}
+body .container #apartment .slider #sub-imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+body .container #apartment .slider #sub-imgs div {
+  opacity: 0.6;
+  margin: 0 8px;
+}
+body .container #apartment .slider #sub-imgs div img {
+  width: 100%;
+  cursor: pointer;
+}
+body .container #apartment .slider #sub-imgs div:hover {
+  opacity: 1;
+}
+body .container #apartment .slider #sub-imgs .opacity {
+  opacity: 1;
+}
+body .container #content {
+  margin-left: 260px;
+  padding: 15px 16px;
+}
+body .container #content div h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0;
+}
+body .container #content div .row {
+  display: flex;
+}
+body .container #content div .row .col {
+  width: 50%;
+  margin-bottom: 20px;
+}
+body .container #content div .row .col p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+body .container #content div hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+body .container #content div p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+body .container #content div button {
+  width: 35%;
+  margin-bottom: 20px;
+}
+body .container #subscribe-modal {
+  padding: 12px 0;
+  position: fixed;
+  z-index: 4;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body .container #subscribe-modal .content {
+  width: 900px;
+  background-color: #fefefe;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 40px;
+  border: 1px solid #888;
+  text-align: center;
+  position: relative;
+}
+body .container #subscribe-modal .content .modal-close-icon {
+  position: absolute;
+  right: 60px;
+  top: 35px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+}
+body .container #subscribe-modal .content h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+body .container #subscribe-modal .content p {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 15px 0;
+}
+body .container #subscribe-modal .content #subscribe-form .input-control input {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+body .container #subscribe-modal .content #subscribe-form button {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 992px) {
+  body .container #subscribe-modal .content {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .container #subscribe-modal .content {
+    width: 60%;
+  }
+  body .container #subscribe-modal .content .modal-close-icon {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+  }
+  body .container #subscribe-modal .content h2 {
+    font-size: 20px;
+  }
+}
+body .container #contact {
+  margin-left: 260px;
+  padding: 15px 16px;
+}
+body .container #contact h2 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 30px;
+}
+body .container #contact div p {
+  margin: 7px 0;
+  font-size: 15px;
+}
+body .container #contact p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+body .container #contact #contact-form input {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin: 8px 0;
+}
+body .container #contact #contact-form button {
+  width: 35%;
+}
+
+@media only screen and (max-width: 992px) {
+  body .container .nav {
+    display: none;
+  }
+  body .container #apartment {
+    padding-top: 80px;
+    margin-left: 0;
+  }
+  body .container #content {
+    margin-left: 0;
+  }
+  body .container #contact {
+    margin-left: 0;
+  }
+  body .container #footer {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .container #content div button {
+    width: 100%;
+  }
+  body .container #contact #contact-form button {
+    width: 100%;
+  }
+}
+body .container #footer {
+  margin-left: 260px;
+  padding: 8px 16px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+body .container #footer p {
+  font-size: 15px;
+}
+body .container #footer p a {
+  text-decoration: underline;
+  color: black;
+}
+
+@media only screen and (max-width: 992px) {
+  body .container #footer {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

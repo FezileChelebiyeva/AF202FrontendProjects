@@ -1,0 +1,23 @@
+body {
+  .container {
+    #footer {
+      margin-left: 260px;
+      padding: 8px 16px;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      p {
+        font-size: 15px;
+        a {
+          text-decoration: underline;
+          color: black;
+        }
+      }
+     
+    }
+  }
+}
+ @media only screen and (max-width: 992px) {
+        body .container #footer {
+          margin-left: 0;
+        }
+      }
