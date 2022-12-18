@@ -162,11 +162,11 @@ iconMenu.addEventListener("click", function () {
 
   blackBody.style.display = "block";
   blackBody.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+});
 
-  faRemove.addEventListener("click", function () {
-    nav.style.display = "none";
-    blackBody.style.display = "none";
-  });
+faRemove.addEventListener("click", function () {
+  nav.style.display = "none";
+  blackBody.style.display = "none";
 });
 
 livingroom.addEventListener("click", function () {
