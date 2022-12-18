@@ -82,6 +82,9 @@ body .container .nav {
   height: 100vh;
   overflow-y: scroll;
 }
+body .container .nav.show {
+  display: block;
+}
 body .container .nav .form-section {
   padding: 20px;
 }
@@ -89,6 +92,11 @@ body .container .nav .form-section .close-icon .fa-remove {
   display: none;
   margin-left: 200px;
   cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  body .container .nav .form-section .close-icon .fa-remove {
+    display: block;
+  }
 }
 body .container .nav .form-section h3 {
   margin: 16px 0;

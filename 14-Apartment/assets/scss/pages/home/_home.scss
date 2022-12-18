@@ -23,6 +23,9 @@ body {
       border: 1px solid #ccc;
       height: 100vh;
       overflow-y: scroll;
+      &.show{
+        display: block;
+      }
       .form-section {
         padding: 20px;
         .close-icon {
@@ -30,6 +33,9 @@ body {
             display: none;
             margin-left: 200px;
             cursor: pointer;
+            @media only screen and (max-width: 992px) {
+              display: block;
+            }
           }
         }
         h3 {

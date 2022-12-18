@@ -157,16 +157,15 @@ searchBtn.addEventListener("click", function (e) {
 });
 
 iconMenu.addEventListener("click", function () {
-  nav.style.display = "block";
-  faRemove.style.display = "block";
+  nav.classList.add("show");
 
   blackBody.style.display = "block";
   blackBody.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 });
 
 faRemove.addEventListener("click", function () {
-  nav.style.display = "none";
   blackBody.style.display = "none";
+  nav.classList.remove("show");
 });
 
 livingroom.addEventListener("click", function () {
