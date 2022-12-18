@@ -3,7 +3,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link
       rel="stylesheet"
@@ -11,7 +10,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Rental</title>
   </head>
@@ -24,7 +26,6 @@
           <i class="fa fa-bars"></i>
         </div>
       </header>
-
       <nav id="nav" class="nav">
         <div class="form-section">
           <div class="close-icon">
@@ -33,66 +34,40 @@
           <h3>Rental</h3>
           <h3>from $99</h3>
           <p>per night</p>
-
           <form id="rental-form">
             <div class="input-control">
               <p>
-                <label for="check-in"
+                <label for="checkIn"
                   ><i class="fa fa-calendar-check-o"></i> Check In</label
                 >
               </p>
-              <input
-                id="checkIn"
-                type="text"
-                placeholder="DD MM YYYY"
-                name="check-in"
-              />
-              <div class="error-message"></div>
+              <input id="checkIn" type="text" placeholder="DD MM YYYY" />
+              <div class="navErrCheckIn"></div>
             </div>
             <div class="input-control">
               <p>
-                <label for="check-out"
+                <label for="checkOut"
                   ><i class="fa fa-calendar-o"></i> Check Out</label
                 >
               </p>
-              <input
-                id="checkOut"
-                type="text"
-                placeholder="DD MM YYYY"
-                name="check-out"
-              />
-              <div class="error-message"></div>
+              <input id="checkOut" type="text" placeholder="DD MM YYYY" />
+              <div class="navErrCheckOut"></div>
             </div>
             <div class="input-control">
               <p>
                 <label for="adults"><i class="fa fa-male"></i> Adults</label>
               </p>
-              <input
-                id="adults"
-                type="number"
-                value="1"
-                name="adults"
-                min="1"
-                max="6"
-              />
-              <div class="error-message"></div>
+              <input id="adults" type="number" value="1" min="1" max="6" />
+              <div class="errorAdults"></div>
             </div>
             <div class="input-control">
               <p>
                 <label for="kids"><i class="fa fa-child"></i> Kids</label>
               </p>
-              <input
-                id="kids"
-                type="number"
-                value="0"
-                name="kids"
-                min="0"
-                max="6"
-              />
-              <div class="error-message"></div>
+              <input id="kids" type="number" value="0" min="0" max="6" />
+              <div class="errorKids"></div>
             </div>
-
-            <button class="searchBtn" type="submit">
+            <button class="searchBtn">
               <i class="fa fa-search w3-margin-right"></i>
               Search availability
             </button>
@@ -115,35 +90,30 @@
         </div>
       </nav>
       <section id="apartment">
-        <div class="slider">
-          <h2>The Apartment</h2>
-          <div class="slides">
-            <div class="main-img-container">
-              <img
-                id="main-img"
-                src="assets/images/livingroom.jpg"
-                alt="living_room"
-              />
-              <span id="img-info">Living Room</span>
-            </div>
-            <div id="sub-imgs">
-              <div class="opacity livingroom">
-                <img src="./assets/images/livingroom.jpg" alt="Living Room" />
-              </div>
-              <div class="diningroom">
-                <img src="./assets/images/diningroom.jpg" alt="Dining Room" />
-              </div>
-              <div class="bedroom">
-                <img src="assets/images/bedroom.jpg" alt="Bedroom" />
-              </div>
-              <div class="livingroom2">
-                <img src="assets/images/livingroom2.jpg" alt="Living Room II" />
-              </div>
-            </div>
+        <h2>The Apartment</h2>
+        <div class="main-img-container">
+          <img
+            id="main-img"
+            src="assets/images/livingroom.jpg"
+            alt="living_room"
+          />
+          <span id="img-info">Living Room</span>
+        </div>
+        <div id="sub-imgs">
+          <div class="opacity livingroom">
+            <img src="./assets/images/livingroom.jpg" alt="Living Room" />
+          </div>
+          <div class="diningroom">
+            <img src="./assets/images/diningroom.jpg" alt="Dining Room" />
+          </div>
+          <div class="bedroom">
+            <img src="assets/images/bedroom.jpg" alt="Bedroom" />
+          </div>
+          <div class="livingroom2">
+            <img src="assets/images/livingroom2.jpg" alt="Living Room II" />
           </div>
         </div>
       </section>
-
       <section id="content">
         <div>
           <h4>The space</h4>
@@ -210,7 +180,6 @@
         </div>
         <hr />
       </section>
-
       <section id="subscribe-modal" style="display: none">
         <div class="content">
           <i class="fa fa-remove modal-close-icon"></i>
@@ -226,13 +195,12 @@
                 type="email"
                 placeholder="Enter e-mail"
               />
-              <div class="error-message"></div>
+              <div class="subsErrEmail"></div>
             </div>
-            <button type="submit" class="subscribeModalBbtn">Subscribe</button>
+            <button class="subscribeModalBbtn">Subscribe</button>
           </form>
         </div>
       </section>
-
       <section id="contact">
         <h2>Contact</h2>
         <div class="contact-info">
@@ -248,34 +216,20 @@
         <p>Questions? Go ahead, ask them:</p>
         <form id="contact-form">
           <div class="input-control">
-            <input
-              id="contactNameInput"
-              type="text"
-              placeholder="Name"
-            />
-            <div class="error-message-control"></div>
+            <input id="contactNameInput" type="text" placeholder="Name" />
+            <div class="nameError"></div>
           </div>
           <div class="input-control">
-            <input
-              id="contactEmailInput"
-              type="email"
-              placeholder="Email"
-            />
-            <div class="error-message-control"></div>
+            <input id="contactEmailInput" type="email" placeholder="Email" />
+            <div class="emailError"></div>
           </div>
           <div class="input-control">
-            <input
-              id="contactMessageInput"
-              type="text"
-              placeholder="Message"
-            />
-            <div class="error-message-control"></div>
+            <input id="contactMessageInput" type="text" placeholder="Message" />
+            <div class="messageError"></div>
           </div>
-
-          <button type="submit" class="sendMessageBtn">Send a Message</button>
+          <button class="sendMessageBtn">Send a Message</button>
         </form>
       </section>
-
       <footer id="footer">
         <p>
           Powered by

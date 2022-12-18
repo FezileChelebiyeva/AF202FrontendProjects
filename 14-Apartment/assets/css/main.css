@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
@@ -125,20 +125,20 @@ body .container #apartment {
   padding: 10px;
   margin-left: 260px;
 }
-body .container #apartment .slider h2 {
+body .container #apartment h2 {
   color: #4caf50;
   font-size: 30px;
   font-weight: 400;
   margin: 16px 0 16px 8px;
 }
-body .container #apartment .slider .main-img-container {
+body .container #apartment .main-img-container {
   position: relative;
   margin: 0 8px;
 }
-body .container #apartment .slider .main-img-container #main-img {
+body .container #apartment .main-img-container #main-img {
   width: 100%;
 }
-body .container #apartment .slider .main-img-container #img-info {
+body .container #apartment .main-img-container #img-info {
   position: absolute;
   bottom: 12px;
   left: 0;
@@ -147,23 +147,23 @@ body .container #apartment .slider .main-img-container #img-info {
   background: #000;
   font-size: 15px;
 }
-body .container #apartment .slider #sub-imgs {
+body .container #apartment #sub-imgs {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
-body .container #apartment .slider #sub-imgs div {
+body .container #apartment #sub-imgs div {
   opacity: 0.6;
   margin: 0 8px;
 }
-body .container #apartment .slider #sub-imgs div img {
+body .container #apartment #sub-imgs div img {
   width: 100%;
   cursor: pointer;
 }
-body .container #apartment .slider #sub-imgs div:hover {
+body .container #apartment #sub-imgs div:hover {
   opacity: 1;
 }
-body .container #apartment .slider #sub-imgs .opacity {
+body .container #apartment #sub-imgs .opacity {
   opacity: 1;
 }
 body .container #content {
@@ -173,7 +173,7 @@ body .container #content {
 body .container #content div h4 {
   font-weight: 700;
   font-size: 20px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 body .container #content div .row {
   display: flex;
@@ -208,7 +208,7 @@ body .container #subscribe-modal {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 body .container #subscribe-modal .content {
   width: 900px;

@@ -14,15 +14,21 @@ let subscribeBtn = document.querySelector(".subscribeBtn");
 
 // for contact local storages
 let sendMessageBtn = document.querySelector(".sendMessageBtn");
-let errorMessage = document.querySelectorAll(".error-message-control");
 let contactNameInput = document.querySelector("#contactNameInput");
 let contactEmailInput = document.querySelector("#contactEmailInput");
 let contactMessageInput = document.querySelector("#contactMessageInput");
+
+let nameError = document.querySelector(".nameError");
+let emailError = document.querySelector(".emailError");
+let messageError = document.querySelector(".messageError");
 
 let arrayContactMessage = JSON.parse(localStorage.getItem("Information")) || [];
 
 sendMessageBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  nameError.innerText = "";
+  emailError.innerText = "";
+  messageError.innerText = "";
   if (
     contactNameInput.value != "" &&
     contactEmailInput.value != "" &&
@@ -36,19 +42,40 @@ sendMessageBtn.addEventListener("click", function (e) {
     arrayContactMessage.push(messageObj);
     localStorage.setItem("Information", JSON.stringify(arrayContactMessage));
   } else {
-    alert("This field is required");
-    // let textError = document.createElement("p");
-    // textError = document.createElement("p");
-    // textError.innerText = "This field is required";
-    // textError.style.color = "red";
+    nameError.style.color = "red";
+    emailError.style.color = "red";
+    messageError.style.color = "red";
 
-    // if (contactNameInput.value == "") {
-    //   errorMessage[0].append(textError);
-    // } else if (contactEmailInput.value == "") {
-    //   errorMessage[1].append(textError);
-    // } else if (contactMessageInput.value == "") {
-    //   errorMessage[2].append(textError);
-    // }
+    if (
+      contactNameInput.value == "" &&
+      contactEmailInput.value == "" &&
+      contactMessageInput.value == ""
+    ) {
+      nameError.innerText = "This field is required";
+      emailError.innerText = "This field is required";
+      messageError.innerText = "This field is required";
+    } else if (contactNameInput.value == "" && contactEmailInput.value == "") {
+      nameError.innerText = "This field is required";
+      emailError.innerText = "This field is required";
+    } else if (
+      contactEmailInput.value == "" &&
+      contactMessageInput.value == ""
+    ) {
+      emailError.innerText = "This field is required";
+      messageError.innerText = "This field is required";
+    } else if (
+      contactNameInput.value == "" &&
+      contactMessageInput.value == ""
+    ) {
+      nameError.innerText = "This field is required";
+      messageError.innerText = "This field is required";
+    } else if (contactNameInput.value == "") {
+      nameError.innerText = "This field is required";
+    } else if (contactEmailInput.value == "") {
+      emailError.innerText = "This field is required";
+    } else {
+      messageError.innerText = "This field is required";
+    }
   }
 
   contactNameInput.value = "";
@@ -63,10 +90,19 @@ let checkOut = document.querySelector("#checkOut");
 let adults = document.querySelector("#adults");
 let kids = document.querySelector("#kids");
 
+let navErrCheckIn = document.querySelector(".navErrCheckIn");
+let navErrCheckOut = document.querySelector(".navErrCheckOut");
+let errorAdults = document.querySelector(".errorAdults");
+let errorKids = document.querySelector(".errorKids");
+
 let arrayReservation = JSON.parse(localStorage.getItem("Reservation")) || [];
 
 searchBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  navErrCheckIn.innerText = "";
+  navErrCheckOut.innerText = "";
+  errorAdults.innerText = "";
+  errorKids.innerText = "";
   if (
     checkIn.value != "" &&
     checkOut.value != "" &&
@@ -84,7 +120,36 @@ searchBtn.addEventListener("click", function (e) {
 
     localStorage.setItem("Reservation", JSON.stringify(arrayReservation));
   } else {
-    alert("write");
+    // alert("write");
+    navErrCheckIn.style.color = "red";
+    navErrCheckOut.style.color = "red";
+    errorAdults.style.color = "red";
+    errorKids.style.color = "red";
+    if (
+      checkIn.value == "" &&
+      checkOut.value == "" &&
+      adults.value == "" &&
+      kids.value == ""
+    ) {
+      navErrCheckIn.innerText = "This field is required";
+      navErrCheckOut.innerText = "This field is required";
+      errorAdults.innerText = "This field is required";
+      errorKids.innerText = "This field is required";
+    } else if (checkIn.value == "" && checkOut.value == "") {
+      navErrCheckIn.innerText = "This field is required";
+      navErrCheckOut.innerText = "This field is required";
+    } else if (checkIn.value == "") {
+      navErrCheckIn.innerText = "This field is required";
+    } else if (checkOut.value == "") {
+      navErrCheckOut.innerText = "This field is required";
+    } else if (adults.value == "" && kids.value == "") {
+      errorAdults.innerText = "This field is required";
+      errorKids.innerText = "This field is required";
+    } else if (adults.value == "") {
+      errorAdults.innerText = "This field is required";
+    } else {
+      errorKids.innerText = "This field is required";
+    }
   }
 
   checkIn.value = "";
@@ -156,10 +221,15 @@ subscribeBtn.addEventListener("click", function () {
 // for subscribe local stroges
 let subscribeModalBbtn = document.querySelector(".subscribeModalBbtn");
 let subscribeInput = document.querySelector("#subscribeInput");
+
+let subsErrorEmail = document.querySelector(".subsErrEmail");
+
 let arraySubscribe = JSON.parse(localStorage.getItem("Subscribe")) || [];
 
 subscribeModalBbtn.addEventListener("click", function (e) {
   e.preventDefault();
+  subsErrorEmail.innerText = "";
+
   if (subscribeInput.value != "") {
     let subscribeObj = {
       email: subscribeInput.value,
@@ -167,7 +237,10 @@ subscribeModalBbtn.addEventListener("click", function (e) {
     arraySubscribe.push(subscribeObj);
     localStorage.setItem("Subscribe", JSON.stringify(arraySubscribe));
   } else {
-    alert("write email");
+    // alert("write email");
+    subsErrorEmail.innerText = "This field is required";
+    subsErrorEmail.style.color = "red";
+    subsErrorEmail.style.marginTop = "10px";
   }
 
   subscribeInput.value = "";
