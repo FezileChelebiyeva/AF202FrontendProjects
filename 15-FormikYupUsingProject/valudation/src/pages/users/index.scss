@@ -1,0 +1,26 @@
+#users-page{
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+    h1{
+        text-align: center;
+        margin: 50px 0;
+        font-size: 32px;
+        font-weight: 700;
+        color: rgb(22, 0, 131);
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    .flag-img{
+                        width: 40px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "name": "Fezile",
+      "surname": "Chelebiyeva",
+      "password": "4567890-098",
+      "replayPassword": "",
+      "country": "Australia",
+      "city": "Vienna",
+      "id": 0
+    },
+    {
+      "name": "Fezi",
+      "surname": "Chelebiyeva",
+      "password": "3434343434",
+      "replayPassword": "",
+      "country": "Azerbaijan",
+      "city": "Baku",
+      "id": 1
+    },
+    {
+      "name": "Johny",
+      "surname": "Deo",
+      "password": "pagopago",
+      "replayPassword": "",
+      "country": "American Samoa",
+      "city": "Pago Pago",
+      "id": 2
+    },
+    {
+      "name": "Clementine Townsend",
+      "surname": "Gay",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Monaco",
+      "city": "Monaco",
+      "id": 3
+    },
+    {
+      "name": "Rama Browning",
+      "surname": "Douglas",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Rwanda",
+      "city": "Kigali",
+      "id": 4
+    },
+    {
+      "name": "Sopoline Beck",
+      "surname": "Pickett",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Hong Kong",
+      "city": "City of Victoria",
+      "id": 5
+    },
+    {
+      "name": "Demetria West",
+      "surname": "Downs",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Bahamas",
+      "city": "Nassau",
+      "id": 6
+    },
+    {
+      "name": "Dante Colon",
+      "surname": "Pearson",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Australia",
+      "city": "Canberra",
+      "id": 7
+    },
+    {
+      "name": "Eliana Stanley",
+      "surname": "Ryan",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Argentina",
+      "city": "Buenos Aires",
+      "id": 8
+    },
+    {
+      "name": "Shaine King",
+      "surname": "Nichols",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Portugal",
+      "city": "Lisbon",
+      "id": 9
+    },
+    {
+      "name": "Gage Larson",
+      "surname": "Mcguire",
+      "password": "Pa$$w0rd!",
+      "replayPassword": "",
+      "country": "Russian Federation",
+      "city": "Moscow",
+      "id": 10
+    }
+  ]
+}
