@@ -142,7 +142,7 @@ const SignUpPage = () => {
                     name="replayPassword"
                     type="password"
                     onChange={handleChange}
-                    value={values.password}
+                    value={(values.replayPassword = values.password)}
                     placeholder="Replay Password"
                   />
                   {errors.replayPassword && touched.replayPassword && (
@@ -167,7 +167,9 @@ const SignUpPage = () => {
                   onChange={handleChange}
                   value={values.country}
                 >
-                  <option value="Country">Country</option>
+                  <option value="" selected disabled>
+                    Country
+                  </option>
                   {countryData.map((element) => {
                     return (
                       <option key={uid()} value={element.name}>
@@ -196,7 +198,9 @@ const SignUpPage = () => {
                   onChange={handleChange}
                   value={values.city}
                 >
-                  <option value="City">City</option>
+                  <option value="" selected disabled>
+                    City
+                  </option>
                   {countryData.map((element) => {
                     if (values.country == element.name) {
                       values.city = element?.capital;
@@ -208,6 +212,7 @@ const SignUpPage = () => {
                     );
                   })}
                 </select>
+
                 {errors.city && touched.city && (
                   <div
                     style={{

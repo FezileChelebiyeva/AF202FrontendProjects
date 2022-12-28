@@ -3,7 +3,8 @@ import * as Yup from "yup";
 export const usersValidationSchema = Yup.object({
   name: Yup.string()
     .required("Please enter a name")
-    .min(5, "must use min 5 characters!"),
+    .min(5, "must use min 5 characters!")
+    .max(10, "must use max 10 characters!"),
   surname: Yup.string()
     .required("Please enter a surname")
     .matches(/^([A-Za-z]*)$/gi, "Surname can only contain letters."),
